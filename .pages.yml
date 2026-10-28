@@ -14,7 +14,7 @@ content:
         type: image
         required: true
       - name: body
-        label: Description
+        label: Body
         type: rich-text
       - name: Date
         label: Date
