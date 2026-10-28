@@ -3,7 +3,7 @@ content:
   - name: artworks
     label: Artworks
     type: collection
-    path: artworks-content
+    path: artworks
     fields:
       - name: title
         label: Title
