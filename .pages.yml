@@ -1,4 +1,4 @@
-media: artworks/artworks-media
+media: assets/artworks-media
 content:
   - name: artworks
     label: Artworks
