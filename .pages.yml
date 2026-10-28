@@ -1,11 +1,21 @@
-media: src/assets
+media: artworks/artworks-media
 content:
-  - name: pages
-    label: Pages
+  - name: artworks
+    label: Artworks
     type: collection
-    path: docs
+    path: artworks-content
     fields:
       - name: title
+        label: Title
         type: string
+        required: true
+      - name: image
+        label: Image
+        type: image
+        required: true
       - name: body
+        label: Description
         type: rich-text
+      - name: Date
+        label: Date
+        type: date
