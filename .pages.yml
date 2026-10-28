@@ -1,9 +1,9 @@
-media: assets/artworks-media
+media: public/artworks-media
 content:
   - name: artworks
     label: Artworks
     type: collection
-    path: artworks
+    path: src/artworks
     fields:
       - name: title
         label: Title
