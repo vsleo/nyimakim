@@ -1,0 +1,67 @@
+
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>
+      &copy; {currentYear} MyWebsite. All rights reserved.
+    </p>
+
+    <nav aria-label="Footer navigation">
+      <a href="/privacy/">Privacy</a>
+      <a href="/imprint/">Imprint</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid #e5e7eb;
+    background: #f9fafb;
+    color: #6b7280;
+    padding: 1.5rem 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-inner p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .footer-inner nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .footer-inner a {
+    color: inherit;
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+
+  .footer-inner a:hover {
+    color: #111827;
+  }
+
+  .footer-inner a:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 4px;
+  }
+</style>
