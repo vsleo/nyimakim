@@ -3,7 +3,7 @@ content:
   - name: artworks
     label: Artworks
     type: collection
-    path: src/content/artworks
+    path: src/artworks
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: image, label: Image, type: image, required: true }
