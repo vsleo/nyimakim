@@ -1,0 +1,75 @@
+---
+
+---
+
+<script>
+  import { JustifiedGallery } from 'justified-gallery';
+  import 'justified-gallery/style.css';
+
+  const container = document.getElementById('gallery')!;
+  const settings = { 
+    rowHeight: 300,
+    margins: 10,
+    lastRow: 'center',
+  };
+
+  const gallery = new JustifiedGallery(container, settings);
+
+  gallery.init();
+</script>
+
+<div id="gallery" class="justified-gallery">
+  <a href="../../public/artworks-media/placeholder_1.jpg">
+    <img alt="Title 1" src="../../public/artworks-media/placeholder_1.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_2.jpg">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_2.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_3.jpg">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_3.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_4.jpg">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_4.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_5.webp">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_5.webp" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_6.jpg">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_6.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_7.png">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_7.png" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_8.jpg">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_8.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_5.webp">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_5.webp" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_7.png">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_7.png" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_2.jpg">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_2.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_1.jpg">
+    <img alt="Title 1" src="../../public/artworks-media/placeholder_1.jpg" />
+  </a>
+  <a href="../../public/artworks-media/placeholder_6.jpg">
+    <img alt="Title 2" src="../../public/artworks-media/placeholder_6.jpg" />
+  </a>
+  
+  <!-- other images... -->
+</div>
+
+<style>
+    #gallery {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    #gallery a {
+      
+    }
+</style> 

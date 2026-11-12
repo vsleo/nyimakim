@@ -1,94 +1,46 @@
 ---
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/pages/About/" },
-  { label: "Contact", href: "/pages/Contact/" },
-];
+
 ---
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="/" class="logo" aria-label="Home">
-      MyWebsite
+<nav>
+    <a class="logo" href="/">
+        <img src="/favicon.svg" alt="Logo" />
     </a>
-
-    <nav aria-label="Main navigation">
-      <ul class="nav-links">
-        {navLinks.map((link) => (
-          <li>
-            <a href={link.href}>{link.label}</a>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  </div>
-</header>
+    <div class="nav-links">
+        <a href="/">Galerie</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Kontakt</a>
+    </div>
+</nav>
 
 <style>
-  .site-header {
-    border-bottom: 1px solid #e5e7eb;
-    background: #ffffff;
-  }
+    nav {
+        display: flex;
+        width: 100%;
+        height: 20vh;
+        align-items: center;
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
+        box-sizing: border-box;
+    }
 
-  .header-inner {
-    min-height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
+    .logo {
+        margin-right: auto;
+    }
 
-  .logo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #111827;
-    text-decoration: none;
-  }
-
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1.75rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-links a {
-    color: #4b5563;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .nav-links a:hover {
-    color: #2563eb;
-  }
-
-  .nav-links a:focus-visible,
-  .logo:focus-visible {
-    outline: 2px solid #2563eb;
-    outline-offset: 4px;
-  }
-
-  @media (max-width: 600px) {
-    .header-inner {
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: center;
-      gap: 0.75rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+    .logo img {
+        width: 80px;
+        height: auto;
     }
 
     .nav-links {
-      flex-wrap: wrap;
-      gap: 0.75rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 2vw;
     }
-  }
+
+    .nav-links a {
+        color: black;
+        font-size: 1.9rem;
+        text-decoration: none;
+    }
 </style>

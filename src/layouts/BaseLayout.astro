@@ -1,0 +1,43 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+const { title } = Astro.props;
+---
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <BaseHead title={title}/>
+</head>
+  <body>
+    <Nav />
+    <h1>{title}</h1>
+    <article>
+      <slot /> <!-- your content is injected here -->
+    </article>
+    <Footer />
+  </body>
+  <style>
+    body {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      background-color: #eaeae1;
+      background-image: radial-gradient(circle at -1% -21%, #52e13e1e 42%, transparent 62.05%),radial-gradient(circle at 109% -79%, #3f38b81e 50%, transparent 65.05%),radial-gradient(circle at 50% 140%, #99602621 50%, transparent 63.05%);
+      min-height: 100vh;
+      padding: 0 15vw;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  </style>
+</html>
