@@ -7,8 +7,8 @@ import vue from '@astrojs/vue';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://YOUR_USERNAME.github.io',
-  base: '/YOUR_REPOSITORY',
+  site: 'https://vsleo.github.io',
+  base: '/nyimakim',
   vite: {
     plugins: [tailwindcss()]
   },
